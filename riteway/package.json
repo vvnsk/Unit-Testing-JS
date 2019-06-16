@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "NODE_ENV=test babel-node ./src/index-test.js",
-    "watch": "watch 'npm run -s test | tap-nirvana' src"
+    "test": "babel-node ./src/index-test.js",
+    "watch": "watch 'clear && npm run -s test | tap-nirvana' src"
   },
   "keywords": [],
   "author": "",
@@ -13,8 +13,14 @@
   "devDependencies": {
     "@babel/core": "7.4.5",
     "@babel/node": "7.4.5",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
     "babel-eslint": "10.0.1",
     "babel-plugin-styled-components": "1.10.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.26.0",
     "riteway": "6.0.3",
     "tap-nirvana": "1.1.0",
     "watch": "1.0.2"
